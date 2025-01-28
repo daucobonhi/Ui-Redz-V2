@@ -1,28 +1,15 @@
-loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V2/refs/heads/main/UiREDzV2.lua")))()
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/Msunehub/Ui1/refs/heads/main/RedTT2.lua")))()
 
        local Window = MakeWindow({
          Hub = {
-         Title = "Name Hub",
-         Animation = "By:"
-         },
-        Key = {
-        KeySystem = false,
-        Title = "Key System",
-        Description = "",
-        KeyLink = "",
-        Keys = {"1234"},
-        Notifi = {
-        Notifications = true,
-        CorrectKey = "Running the Script...",
-       Incorrectkey = "The key is incorrect",
-       CopyKeyLink = "Copied to Clipboard"
-      }
-    }
-  })
+         Title = "Matsune Hub",
+         Animation = "By: Dragon Toro"
+         }
+      })
 
        MinimizeButton({
        Image = "http://www.roblox.com/asset/?id=122789004227770",
-       Size = {60, 60},
+       Size = {45, 45},
        Color = Color3.fromRGB(10, 10, 10),
        Corner = true,
        Stroke = false,
@@ -70,4 +57,22 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
                     
    Paragraph = AddParagraph(Farm, {"Paragraph Test", ""})
    
-   
+----- Slider 
+
+    local mobmau = AddSlider(Tab1o, {
+     Name = "Test",
+     MinValue = 0,
+     MaxValue = 100,
+     Default = 85,
+     Increase = 1,
+     Callback = function()
+     end
+    })   
+    
+    local TextBox = AddTextBox(Tab1o, {
+    Name = "Test",
+    Default = "",
+   PlaceholderText = "",
+   Callback = function()
+ end
+ })
